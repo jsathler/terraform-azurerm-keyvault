@@ -29,7 +29,7 @@ variable "key_vault" {
     tenant_id                       = string
     sku_name                        = optional(string, "standard")
     enable_rbac_authorization       = optional(bool, true)
-    public_network_access_enabled   = optional(bool, true)
+    public_network_access_enabled   = optional(bool, false)
     soft_delete_retention_days      = optional(number, 31)
     purge_protection_enabled        = optional(bool, true)
     enabled_for_disk_encryption     = optional(bool, false)
